@@ -1,0 +1,8 @@
+<h2>Latest Posts</h2>
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <a href="/post/<%= post._id %>"><%= post.title %></a>
+    </li>
+  <% }); %>
+</ul>
